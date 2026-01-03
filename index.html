@@ -1,62 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrainWave Labs</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrainWave Labs | AI, SaaS & Defense Solutions</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Main site CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="brand">
+      <img src="images/company-logo.png" alt="BrainWave Labs logo">
+      <div class="logo">BrainWave Labs</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#solutions">Solutions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">BrainWave Labs</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- HERO -->
+  <section id="home" class="section home">
+    <h1>Engineering Intelligence for Critical Systems</h1>
+    <p>AI-driven SaaS and defense-grade solutions built on robust software and hardware expertise.</p>
+  </section>
 
-    <!-- Home Section -->
-    <section id="home" class="section home">
-        <h1>Innovating with Intelligence</h1>
-        <p>
-            BrainWave Labs is focused on building intelligent, scalable, and
-            impactful technology solutions powered by modern software and AI.
-        </p>
-    </section>
+  <!-- SOLUTIONS -->
+  <section id="solutions" class="section">
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <h2>Our Projects</h2>
-        <div class="project-grid" id="projectGrid">
-            <!-- Project cards injected by JS -->
+    <!-- SaaS & Enterprise -->
+    <h2>SaaS & Enterprise Solutions</h2>
+
+    <div class="project-block">
+      <div class="project-image" id="img-meeting" onclick="openLightbox(this)"></div>
+      <div class="project-content">
+        <h3>AI-Powered Meeting Intelligence Platform</h3>
+        <p>End-to-end meeting intelligence with live transcription, automated summaries, action-item extraction and workflow automation.</p>
+        <div class="tech-tags"><span>LLMs</span><span>Whisper</span><span>SaaS</span><span>Automation</span></div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-image" id="img-sql" onclick="openLightbox(this)"></div>
+      <div class="project-content">
+        <h3>Natural Language SQL Intelligence Engine</h3>
+        <p>Converts natural language queries into optimized SQL across large enterprise datasets for non-technical users.</p>
+        <div class="tech-tags"><span>NLP</span><span>SQL</span><span>Enterprise AI</span></div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-image" id="img-enterprise-rag" onclick="openLightbox(this)"></div>
+      <div class="project-content">
+        <h3>Enterprise-Grade RAG Intelligence Platform</h3>
+        <p>Retrieval-augmented generation integrating documents and data for intelligent decision support and automation.</p>
+        <div class="tech-tags"><span>RAG</span><span>Agentic AI</span><span>Multi-Modal</span></div>
+      </div>
+    </div>
+
+    <!-- Our Clients: SaaS/Enterprise -->
+    <div class="clients-section" aria-label="SaaS & Enterprise clients">
+      <div class="clients-header">
+        <strong>Our Clients — SaaS & Enterprise</strong>
+      </div>
+      <div class="clients-track-viewport" id="saas-viewport">
+        <div class="clients-track" id="saas-track" tabindex="0" role="list">
+          <!-- logos inserted by JS -->
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+    <!-- Defense & Simulation -->
+    <h2 style="margin-top:140px;">Defense & Simulation</h2>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 BrainWave Labs. All rights reserved.</p>
-    </footer>
+    <div class="project-block">
+      <div class="project-image" id="img-iits" onclick="openLightbox(this)"></div>
+      <div class="project-content">
+        <h3>High-Fidelity Tactical Training Simulator</h3>
+        <p>Military-grade simulation systems leveraging real-time physics engines for immersive tactical training.</p>
+        <div class="tech-tags"><span>Simulation</span><span>Defense</span><span>Hardware</span></div>
+      </div>
+    </div>
 
-    <!-- JS -->
-    <script src="js/config.js"></script>
+    <div class="project-block">
+      <div class="project-image" id="img-logistics" onclick="openLightbox(this)"></div>
+      <div class="project-content">
+        <h3>Military Fleet Logistics Automation</h3>
+        <p>AI-driven logistics platform using computer vision and sensor fusion for large-scale military fleets.</p>
+        <div class="tech-tags"><span>Computer Vision</span><span>LiDAR</span><span>Defense AI</span></div>
+      </div>
+    </div>
+
+    <div class="project-block">
+      <div class="project-image" id="img-military-rag" onclick="openLightbox(this)"></div>
+      <div class="project-content">
+        <h3>Offline Military-Grade RAG System</h3>
+        <p>Secure, air-gapped conversational AI system deployed on on-prem GPU hardware for classified environments.</p>
+        <div class="tech-tags"><span>Offline AI</span><span>RAG</span><span>Classified Systems</span></div>
+      </div>
+    </div>
+
+    <!-- Our Clients: Defense -->
+    <div class="clients-section" aria-label="Defense clients">
+      <div class="clients-header">
+        <strong>Our Clients — Defense & Simulation</strong>
+      </div>
+      <div class="clients-track-viewport" id="defense-viewport">
+        <div class="clients-track" id="defense-track" tabindex="0" role="list">
+          <!-- logos inserted by JS -->
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 BrainWave Labs. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <span class="lightbox-close" role="button" aria-label="Close">✕</span>
+    <img id="lightbox-img" alt="Project image">
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
 </body>
 </html>
