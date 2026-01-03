@@ -11,7 +11,7 @@ const IMAGES = {
     meeting: ["images/meeting-analyzer.jpg"],
     hospital: ["images/hospital.jpg", "images/hospital1.jpg"],
     sql: ["images/sql-generator.jpg"],
-    enterpriseRag: ["images/enterprise-rag.jpg"],
+    enterpriseRag: ["images/enterprise-rag.jpg","images/enterprise-rag1.jpg"],
 
     iits: ["images/iits-simulator.jpg"],
     logistics: ["images/fleet-logistics.jpg"],
